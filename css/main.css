@@ -1,0 +1,609 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*default error*/
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*default setting*/
+html {
+  position: relative;   
+  min-height: 100%;  
+}
+
+body {
+    background: url(../img/wallpaper-aurora.jpg)no-repeat center center fixed; 
+    background-size: cover; 
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background: none; 
+    border:none; 
+    padding-top: 35px;
+}
+
+.navbar-nav {
+    float: right; 
+}
+
+#bs-example-navbar-collapse-1 {
+    border: none;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    padding-right: 30px;
+}
+
+.navbar-toggle {
+    margin-right: 20px;
+}
+
+#logo {
+    font-family: 'Pacifico', cursive; 
+    color: rgb(235,235,235); 
+    font-size: 2.5em; margin-left: 25px; 
+}
+
+#logo:hover {
+    color:rgb(150,150,150); 
+}
+
+#my-nav {
+    margin-right: -10px;
+}
+
+#my-nav li {
+    display: inline-block;
+}
+
+#my-nav li a {
+    font-size: 1.3em; 
+    color: rgb(235,235,235);  
+    background: none; 
+}
+
+#my-nav li a:hover {
+    color: rgb(150,150,150);  
+}
+
+.nav-item { 
+    font-size: 1.5em; 
+    margin-top: -5px;
+}
+
+/* work css */
+#work-container {
+    width: 70%;  
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#work-heading h1 {
+    font-size: 3.5em; 
+    padding: 10px; 
+    color: rgb(230,230,230); 
+    margin: 0px; 
+    font-family: 'Bitter', serif;
+}
+
+#work-heading p {
+    font-size: 2.3em; 
+    padding: 20px 0px; 
+    color: rgb(230,230,230); 
+    margin-bottom: 20px;
+    font-family:  'Lato', serif;
+}
+
+.example {
+    border: 2px solid #ff7300;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 30px;
+    filter: brightness(0.93);
+    transition: all 0.4s;
+}
+
+.example:hover {
+    transform: scale(1.05);
+    filter: brightness(1.03);
+}
+
+/* gallery css */
+#gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#gallery-heading h1 {
+    font-size: 3.5em; 
+    padding: 10px; 
+    color: rgb(230,230,230); 
+    margin: 0px; 
+    font-family: 'Bitter', serif;
+}
+
+#gallery-heading p {
+    font-size: 2em; 
+    padding: 20px 80px; 
+    color: rgb(230,230,230); 
+    margin-bottom: 20px;
+    font-family:  'Lato', serif;
+}
+
+.photo-frame {
+    margin-bottom: 30px; 
+}
+
+.photo {
+    display: block; 
+    position: relative; 
+    overflow: hidden; 
+} 
+
+.photo img { transform:scale(1); 
+    transition:all 1s;
+}
+
+.photo h2 {
+    position: absolute; 
+    width: 100%; 
+    top: 40%; 
+    font-size: 2.5em; 
+    color: white; 
+    padding: 0px 20px;
+    opacity: 0;  
+    transform: translateY(-30px); 
+    transition: all 0.5s; 
+}
+
+.photo:hover img {
+    transform: scale(1.1); 
+    filter: brightness(0.5);  
+}
+
+.photo:hover h2 {
+    transform:translateY(0px); 
+    opacity:1; 
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none; 
+    padding-left: 0px;
+}
+
+footer ul li { 
+    display: inline-block; 
+    color: white; 
+    padding: 5px 10px; 
+}
+
+.footer-item {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.icon { 
+    color: rgb(235,235,235);
+}
+
+.icon:hover {
+    color: rgb(150,150,150);
+}
+
+/*Extra*/
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 1500px) {
+
+    /*  work css */ 
+    #work-heading p {
+        font-size: 1.8em; 
+    }
+    
+    .example {
+        margin-bottom: 30px;
+    }
+
+    /*  gallery css */
+    #gallery-heading p {
+        font-size: 1.8em;
+        padding:20px 50px;
+    }
+}
+
+/*  Ipad */
+@media screen and (max-width: 768px) {
+    
+    /*  work css */
+    #work-container {
+        width: 75%;
+    }    
+    
+    #work-heading h1 {
+        font-size: 2.5em; 
+        padding-bottom: 0px; 
+    }
+    
+    #work-heading p {
+        margin-bottom: 10px;
+    }
+
+    #work-heading p {
+        font-size: 1.4em; 
+    }
+    
+    .example {
+        margin-bottom: 20px;
+    }
+    
+    /*  gallery css */
+    #gallery-heading h1 {
+        font-size: 2.5em; 
+        padding-bottom: 10px; 
+}
+
+    #gallery-heading p {
+        font-size: 1.45em; 
+        padding: 10px 25px 10px 20px; 
+        margin-bottom: 10px;
+    }
+    
+    .photo-frame {
+        padding: 10px;
+        margin: 0px;
+    }
+    
+    .photo h2 {
+        font-size: 2em;
+        top: 35%; 
+    }
+    
+    footer {
+        margin-bottom: 0px;
+    }
+    
+    .footer-item {
+        display: none;   
+    }
+}
+
+/*  Iphone 6 plus */
+@media screen and (max-width: 414px) {
+    
+    body {
+        margin-bottom: 30px;
+    }
+    
+    /*   navbar css  */
+    #logo {
+        font-size: 2.2em;
+        margin-left: 20px;
+    }
+    
+    .navbar {
+        padding-top: 20px;
+    }
+    
+    .navbar-collapse {
+        padding-right: 25px;
+    }
+    
+    #my-nav li a {
+        padding: 5px 0px 0px 15px;
+        font-size: 1.2em;
+    }
+    
+    #contact-btn {
+        display: none;
+    }
+    
+    /*  work css */
+    #work-container {
+        width: 80%;  
+        margin: 0 auto;
+    }
+    
+    #work-heading h1 {
+        font-size: 2em; 
+        padding-bottom: 0px; 
+    }
+
+    #work-heading p {
+        font-size: 1.3em;
+        padding: 10px 0px;
+    }
+    
+    .example {
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+    
+    /*  gallery css */
+    #gallery-heading h1 {
+        font-size: 1.8em; 
+        padding-bottom: 0px; 
+    }
+
+    #gallery-heading p {
+        font-size: 1.15em; 
+        padding: 15px 5px 10px 10px; 
+    }
+    
+    .photo h2 {
+        font-size: 2em;
+        top: 35%; 
+    }
+    
+    /*  footer css  */
+    footer {
+        height: 30px;
+        font-size: 0.8em;
+        margin-bottom: 0px;
+    }
+    
+    footer ul li {
+        padding: 5px;
+    }
+    
+    .footer-item {
+        display: none;
+    }
+    
+    #top-btn {
+        display: none;
+    }
+}
+
+/*  Iphone 6 */
+@media screen and (max-width: 375px) {
+    
+    #logo {
+        font-size: 2em;
+    }
+    
+    /*  work css  */
+    #work-heading h1 {
+        font-size: 1.8em;
+    }
+    
+    #work-heading p {
+        font-size: 1.2em;
+    }
+    
+    /*  gallery css  */
+    #gallery-heading h1 {
+        font-size: 1.8em;
+    }
+    
+    #gallery-heading p {
+        margin-bottom: 0px;
+    }
+}
+
+/*  Iphone 5 */
+@media screen and (max-width: 320px) {
+    
+    /*  navbar css  */
+    .navbar {
+        padding-top: 15px;
+    }
+    
+    #logo {
+        font-size: 1.8em;
+        margin-left: 15px;
+    }
+    
+    #my-nav li a {
+        font-size: 1.1em;
+    }
+    
+    /*  work css  */
+    #work-heading h1 {
+        font-size: 1.5em;
+    }
+    
+    #work-heading p {
+        font-size: 1em;
+    }
+    
+    /*  gallery css  */
+    #gallery-heading h1 {
+        font-size: 1.5em;
+    }
+    
+    #gallery-heading p {
+        font-size: 1em;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) 
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden; /*default error*/
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*default error*/
+.clearfix {
+    *zoom: 1; 
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
