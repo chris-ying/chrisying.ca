@@ -1,77 +1,34 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*default error*/
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 /*default setting*/
 html {
-  position: relative;   
-  min-height: 100%;  
+    position: relative;   
+    min-height: 100%; 
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
-    background: url(../img/wallpaper-aurora.jpg)no-repeat center center fixed; 
-    background-size: cover; 
     margin-bottom: 60px;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/wallpaper-aurora.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .navbar {
     background: none; 
-    border:none; 
-    padding-top: 35px;
+    border: none; 
+    padding-top: 30px;
 }
 
 .navbar-nav {
@@ -80,11 +37,11 @@ body {
 
 #bs-example-navbar-collapse-1 {
     border: none;
+    margin-top: -10px;
 }
 
 .navbar-collapse {
     box-shadow: none;
-    padding-right: 30px;
 }
 
 .navbar-toggle {
@@ -93,25 +50,24 @@ body {
 
 #logo {
     font-family: 'Pacifico', cursive; 
-    color: rgb(235,235,235); 
-    font-size: 2.5em; margin-left: 25px; 
+    color: rgb(230,230,230);  
+    text-shadow: 1px 1px 3px rgb(30,30,30);
+    font-size: 2.5em; 
+    margin-left: 25px; 
 }
 
 #logo:hover {
     color:rgb(150,150,150); 
 }
 
-#my-nav {
-    margin-right: -10px;
-}
-
 #my-nav li {
     display: inline-block;
+    z-index: 10;
 }
 
 #my-nav li a {
     font-size: 1.3em; 
-    color: rgb(235,235,235);  
+    color: rgb(230,230,230);  
     background: none; 
 }
 
@@ -119,56 +75,225 @@ body {
     color: rgb(150,150,150);  
 }
 
-.nav-item { 
-    font-size: 1.5em; 
-    margin-top: -5px;
+#menu-btn { 
+    font-size: 2em; 
+    color: rgb(220,220,220);  
+    margin-top: -10px;
 }
 
-/* work css */
+
+/* index css */
+#index-navbar {
+    display: table-row;
+}
+
+#cover {
+    padding-top: 30px;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+#intro {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: rgb(230,230,230);
+    text-shadow: 1px 1px 3px rgb(30,30,30);
+    font-family: 'Gentium Book Basic', serif;
+}
+
+#intro h1 {
+    font-size: 6em; 
+    padding-bottom: 40px; 
+    margin: 0px; 
+    font-weight: 600;
+}
+
+#intro p {
+    font-size: 1.8em; 
+    padding: 5px;
+    margin: 0px;
+}
+
+#down {
+    font-size: 4em;
+    text-align: center;
+    display: table-row;
+}
+
+#down-btn {
+    color: rgb(220,220,220);
+}
+
+#down-btn:hover {
+    color: rgb(150,150,150);
+}
+
+#work {
+    background: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.2));
+}
+
 #work-container {
-    width: 70%;  
+    width: 80%;  
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: rgb(220,220,220);
+    text-shadow: 1px 1px 5px rgb(0,0,0);
+}
+
+#work h1 {
+    text-align: center;
+    margin: 0px; 
+    font-size: 4em; 
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.webpage {
+    padding-bottom: 40px;
+}
+
+.webpage h3 {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.webpage h3 a {
+    font-size: 0.7em;
+    padding-left: 10px;
+    color: rgb(220,220,220);
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.webpage h3 a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.webpage-img {
+    border-radius: 2px;
+    box-shadow: 1px 1px 15px black;
+    transform: scale(1); 
+    filter: brightness(0.95);
+    transition: all 0.5s;
+}
+
+.webpage-img:hover {
+    transform: scale(1.05); 
+    filter: brightness(1);
+}
+
+#contact {
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0));
+}
+
+#contact-container {
+    width: 80%;  
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(235,235,235);
+    text-shadow: 1px 1px 5px rgb(30,30,30);
+}
+
+#contact h1 {
+    font-size: 4em; 
+    margin: 0px; 
+    padding-bottom: 20px; 
+    font-family:  'Gentium Book Basic', serif;
+}
+
+#contact p {
+    font-size: 1.6em; 
+    padding: 5px;
+    margin: 0px;
+    font-family:  'Lato', serif;
+}
+
+#contact p a {
+    text-decoration: underline;
+    color: rgb(235,235,235);
+    transition: all 0.3s;
+}
+
+#contact p a:hover {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+#contact-info {
+    font-size: 0.9em;
+    margin: 20px 0px;
+}
+
+
+/* about css */
+#about-container {
+    width: 80%;  
     margin: 0 auto;
     padding-bottom: 10px;
 }
 
-#work-heading h1 {
+#about-heading h1 {
     font-size: 3.5em; 
     padding: 10px; 
     color: rgb(230,230,230); 
+    text-shadow: 1px 1px 5px rgb(30,30,30);
     margin: 0px; 
     font-family: 'Bitter', serif;
 }
 
-#work-heading p {
-    font-size: 2.3em; 
-    padding: 20px 0px; 
-    color: rgb(230,230,230); 
-    margin-bottom: 20px;
+#profile {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#profile-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+#profile-intro {
+    color: rgb(240, 240, 240);
+    display: block;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+    text-shadow: 1px 1px 1px rgb(30,30,30);
+}
+
+#profile-intro p {
+    font-size: 1.35em; 
+    padding: 10px 20px;
+    margin: 0px;
     font-family:  'Lato', serif;
 }
 
-.example {
-    border: 2px solid #ff7300;
-    border-radius: 5px;
-    padding: 3px;
-    margin-bottom: 30px;
-    filter: brightness(0.93);
-    transition: all 0.4s;
+#profile-intro p a {
+    text-decoration: underline;
+    color: rgb(235, 250, 250);
 }
 
-.example:hover {
-    transform: scale(1.05);
-    filter: brightness(1.03);
+#profile-intro p a:hover {
+    text-decoration: none;
 }
+
 
 /* gallery css */
 #gallery-container {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 5px rgb(30,30,30);
 }
 
 #gallery-heading h1 {
+    text-align: center;
     font-size: 3.5em; 
     padding: 10px; 
     color: rgb(230,230,230); 
@@ -177,8 +302,9 @@ body {
 }
 
 #gallery-heading p {
-    font-size: 2em; 
-    padding: 20px 80px; 
+    text-align: left;
+    font-size: 1.7em;
+    padding: 20px 60px;
     color: rgb(230,230,230); 
     margin-bottom: 20px;
     font-family:  'Lato', serif;
@@ -194,8 +320,9 @@ body {
     overflow: hidden; 
 } 
 
-.photo img { transform:scale(1); 
-    transition:all 1s;
+.photo img { 
+    transform: scale(1); 
+    transition: all 1s;
 }
 
 .photo h2 {
@@ -220,8 +347,9 @@ body {
     opacity:1; 
 }
 
-.clear-fix {
-    clear: both;
+/* magic css */
+#magic-gallery {
+    padding-bottom: 50px;
 }
 
 /* footer */
@@ -252,7 +380,7 @@ footer ul li {
 }
 
 .icon { 
-    color: rgb(235,235,235);
+    color: rgb(230,230,230);  
 }
 
 .icon:hover {
@@ -268,57 +396,68 @@ footer ul li {
    ========================================================================== */
 
 @media screen and (max-width: 1500px) {
-
-    /*  work css */ 
-    #work-heading p {
-        font-size: 1.8em; 
+    
+    #intro h1 {
+        font-size: 5.5em; 
     }
     
-    .example {
-        margin-bottom: 30px;
-    }
-
-    /*  gallery css */
-    #gallery-heading p {
-        font-size: 1.8em;
-        padding:20px 50px;
+    #intro p {
+        font-size: 1.7em; 
     }
 }
 
 /*  Ipad */
 @media screen and (max-width: 768px) {
     
-    /*  work css */
-    #work-container {
-        width: 75%;
-    }    
+    /*  index css */
+    #intro h1 {
+        font-size: 5em; 
+    }
     
-    #work-heading h1 {
+    #work-container {
+        width: 85%;
+        padding-bottom: 30px;
+    }
+    
+    #work h1 {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+    
+    .webpage-img:hover {
+        transform: scale(1); 
+    }
+    
+    #contact h1 {
+        font-size: 3em;
+    }
+    
+    /*  about css */
+    #about-heading h1 {
         font-size: 2.5em; 
+        padding-top: 20px;
         padding-bottom: 0px; 
     }
     
-    #work-heading p {
-        margin-bottom: 10px;
-    }
-
-    #work-heading p {
-        font-size: 1.4em; 
+    #profile-img {
+        padding-top: 30px;
+        border-radius: 0px;
     }
     
-    .example {
-        margin-bottom: 20px;
+    #profile-intro p {
+        font-size: 1.1em; 
     }
     
     /*  gallery css */
     #gallery-heading h1 {
-        font-size: 2.5em; 
+        font-size: 2.5em;
+        padding-top: 20px;
         padding-bottom: 10px; 
-}
+    }
 
     #gallery-heading p {
-        font-size: 1.45em; 
-        padding: 10px 25px 10px 20px; 
+        font-size: 1.3em; 
+        padding: 10px 30px; 
         margin-bottom: 10px;
     }
     
@@ -332,12 +471,27 @@ footer ul li {
         top: 35%; 
     }
     
+    /* magic css */
+    #magic-gallery {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
     footer {
         margin-bottom: 0px;
     }
     
     .footer-item {
         display: none;   
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .navbar-collapse {
+        padding-right: 30px;
+        position: absolute;
+        width: 100%;
     }
 }
 
@@ -350,46 +504,81 @@ footer ul li {
     
     /*   navbar css  */
     #logo {
-        font-size: 2.2em;
+        font-size: 2em;
         margin-left: 20px;
     }
     
-    .navbar {
-        padding-top: 20px;
-    }
-    
-    .navbar-collapse {
-        padding-right: 25px;
-    }
-    
     #my-nav li a {
-        padding: 5px 0px 0px 15px;
+        padding: 0px 10px;
         font-size: 1.2em;
     }
     
-    #contact-btn {
-        display: none;
+    /* index css */
+    #intro h1 {
+        font-size: 3em; 
+        padding-bottom: 20px; 
     }
     
-    /*  work css */
+    #intro p {
+        font-size: 1.4em; 
+    }
+    
+    #down {
+        font-size: 3.5em; 
+    }
+    
     #work-container {
-        width: 80%;  
-        margin: 0 auto;
+        width: 80%;
+        padding-top: 50px;
     }
     
-    #work-heading h1 {
-        font-size: 2em; 
-        padding-bottom: 0px; 
+    #work h1 {
+        font-size: 2.5em;
+        padding-bottom: 15px;
     }
-
-    #work-heading p {
+    
+    .webpage {
+        padding-bottom: 10px;
+    }
+    
+    .webpage h3 {
         font-size: 1.3em;
-        padding: 10px 0px;
     }
     
-    .example {
-        padding: 1px;
-        margin-bottom: 10px;
+    .webpage-img {
+        margin-bottom: 20px;
+    }
+    
+    #contact-container {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+    #contact h1 {
+        font-size: 2.5em; 
+        padding-bottom: 10px;
+    }
+    
+    #contact p {
+        font-size: 1.25em; 
+    }
+    
+    /*  about css */
+    #about-heading h1 {
+        font-size: 2.2em; 
+    }
+    
+    #profile {
+        padding-top: 20px;
+    }
+    
+    #profile-img {
+        padding: 0px 20px 20px 20px;
+    }
+    
+    #profile-intro p {
+        font-size: 1.1em; 
+        padding: 10px;
     }
     
     /*  gallery css */
@@ -406,6 +595,12 @@ footer ul li {
     .photo h2 {
         font-size: 2em;
         top: 35%; 
+    }
+    
+    /*  magic css */
+    #magic-container {
+        width: 80%;  
+        margin: 0 auto;
     }
     
     /*  footer css  */
@@ -431,17 +626,68 @@ footer ul li {
 /*  Iphone 6 */
 @media screen and (max-width: 375px) {
     
+    /* navbar css */
+    .navbar {
+        padding-top: 25px;
+        font-size: 0.9em;
+    }
+    
     #logo {
-        font-size: 2em;
+        margin-left: 15px;
     }
     
-    /*  work css  */
-    #work-heading h1 {
-        font-size: 1.8em;
+    /* index css */
+    #cover {
+        padding-top: 25px;
     }
     
-    #work-heading p {
+    #down {
+        font-size: 3em; 
+    }
+    
+    #work-container {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    #work h1 {
+        padding-bottom: 10px;
+    }
+    
+    .webpage h3 {
         font-size: 1.2em;
+    }
+    
+    #contact-container {
+        width: 82%;
+        padding-top: 40px;
+    }
+    
+    #contact h1 {
+        font-size: 2.2em;
+        padding-bottom: 5px;
+    }
+    
+    #contact p {
+        font-size: 1.15em;
+    }
+    
+    #contact-info {
+        margin: 5px 0px;
+    }
+    
+    /*  about css */
+    #about-container {
+        width: 85%;
+    }
+    
+    #about-heading h1 {
+        font-size: 2em; 
+    }
+    
+    #profile-intro p {
+        font-size: 1.05em;
+        padding-right: 5px;
     }
     
     /*  gallery css  */
@@ -459,25 +705,49 @@ footer ul li {
     
     /*  navbar css  */
     .navbar {
-        padding-top: 15px;
+        font-size: 0.8em;
+        padding-top: 20px;
     }
     
-    #logo {
+    /* index css */
+    #cover {
+        padding-top: 20px;
+    }
+    
+    #intro h1 {
+        font-size: 2.5em; 
+    }
+    
+    #intro p {
+        font-size: 1.2em; 
+    }
+    
+    #work h1 {
         font-size: 1.8em;
-        margin-left: 15px;
     }
     
-    #my-nav li a {
+    .webpage h3 {
         font-size: 1.1em;
+        padding-bottom: 5px;
     }
     
-    /*  work css  */
-    #work-heading h1 {
-        font-size: 1.5em;
+    #contact h1 {
+        font-size: 1.8em; 
     }
     
-    #work-heading p {
-        font-size: 1em;
+    #contact p {
+        font-size: 0.9em;
+    }
+    
+    /*  about css */
+    #about-heading h1 {
+        font-size: 2em; 
+    }
+    
+    #profile-intro p {
+        font-size: 0.9em;
+        padding-left: 5px;
+        padding-right: 2px;
     }
     
     /*  gallery css  */
@@ -490,120 +760,4 @@ footer ul li {
     }
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden; /*default error*/
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*default error*/
-.clearfix {
-    *zoom: 1; 
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
