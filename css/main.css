@@ -104,14 +104,12 @@ body:before {
 }
 
 #intro h1 {
-    font-size: 6em; 
     padding-bottom: 40px; 
     margin: 0px; 
     font-weight: 600;
 }
 
 #intro p {
-    font-size: 1.8em; 
     padding: 5px;
     margin: 0px;
 }
@@ -268,7 +266,6 @@ body:before {
 }
 
 #profile-intro p {
-    font-size: 1.35em; 
     padding: 10px 20px;
     margin: 0px;
     font-family:  'Lato', serif;
@@ -303,7 +300,6 @@ body:before {
 
 #gallery-heading p {
     text-align: left;
-    font-size: 1.7em;
     padding: 20px 60px;
     color: rgb(230,230,230); 
     margin-bottom: 20px;
@@ -329,7 +325,6 @@ body:before {
     position: absolute; 
     width: 100%; 
     top: 40%; 
-    font-size: 2.5em; 
     color: white; 
     padding: 0px 20px;
     opacity: 0;  
@@ -395,7 +390,7 @@ footer ul li {
    Media Queries
    ========================================================================== */
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
     
     #intro h1 {
         font-size: 5.5em; 
