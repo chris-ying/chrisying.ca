@@ -533,7 +533,6 @@ footer ul li {
 
 /*  Iphone 6 plus */
 @media screen and (max-width: 414px) {
-    
     body {
         margin-bottom: 30px;
     }
