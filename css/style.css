@@ -107,11 +107,13 @@ body:before {
     padding-bottom: 40px; 
     margin: 0px; 
     font-weight: 600;
+		font-size: 5.5vw;
 }
 
 #intro p {
     padding: 5px;
     margin: 0px;
+		font-size: 1.5em;
 }
 
 #down {
@@ -269,6 +271,7 @@ body:before {
     padding: 10px 20px;
     margin: 0px;
     font-family:  'Lato', serif;
+		font-size: 1.4vw;
 }
 
 #profile-intro p a {
@@ -304,6 +307,7 @@ body:before {
     color: rgb(230,230,230); 
     margin-bottom: 20px;
     font-family:  'Lato', serif;
+		font-size: 1.6vw;
 }
 
 .photo-frame {
@@ -322,6 +326,7 @@ body:before {
 }
 
 .photo h2 {
+		font-size: 2.5vw;
     position: absolute; 
     width: 100%; 
     top: 40%; 
@@ -391,24 +396,51 @@ footer ul li {
    ========================================================================== */
 
 @media screen and (min-width: 1500px) {
-    
     #intro h1 {
         font-size: 5.5em; 
     }
     
     #intro p {
-        font-size: 1.7em; 
+        font-size: 1.6em; 
     }
+	
+		#profile-intro p {
+			font-size: 1.5em;
+		}
+	
+		#gallery-heading p {
+			font-size: 1.6em;
+		}
+	
+	.photo h2 {
+		font-size: 2.8em;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	  #intro h1 {
+        font-size: 5em; 
+    }
+	
+		#gallery-heading h1 {
+			font-size: 3em;
+		}
+
+		#gallery-heading p {
+			font-size: 1.5em; 
+			padding: 10px 30px; 
+		}
+	
+		.photo h2 {
+			font-size: 2em;
+		}
+	
 }
 
 /*  Ipad */
 @media screen and (max-width: 768px) {
     
     /*  index css */
-    #intro h1 {
-        font-size: 5em; 
-    }
-    
     #work-container {
         width: 85%;
         padding-bottom: 30px;
@@ -452,7 +484,6 @@ footer ul li {
 
     #gallery-heading p {
         font-size: 1.3em; 
-        padding: 10px 30px; 
         margin-bottom: 10px;
     }
     
@@ -482,11 +513,21 @@ footer ul li {
 }
 
 @media screen and (max-width: 767px) {
-    
     .navbar-collapse {
         padding-right: 30px;
         position: absolute;
         width: 100%;
+    }
+	
+	  .photo h2 {
+        font-size: 6vw;
+        top: 40%; 
+    }
+}
+
+@media screen and (max-width: 550px) {
+		#intro h1 {
+        font-size: 4em; 
     }
 }
 

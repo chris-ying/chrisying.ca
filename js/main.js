@@ -19,21 +19,5 @@ $(document).ready(function(){
             }
         });
     });
-    
-		if ( $(window).width() > 768 ) {
-			$( "#intro h1" ).css( "font-size", $(window).width()*0.04+15 );
-			$( "#intro p" ).css( "font-size", $(window).width()*0.005+15 );
-			$( "#profile-intro" ).css( "font-size", $(window).width()*0.01+5 );
-			$( "#gallery-heading p" ).css( "font-size", $(window).width()*0.012+5 );
-			$( ".photo h2" ).css( "font-size", $(window).width()*0.015+10 );
-
-			$( window ).resize(function() {
-					$( "#intro h1" ).css( "font-size", $(window).width()*0.04+15 );
-					$( "#intro p" ).css( "font-size", $(window).width()*0.005+15 );
-					$( "#profile-intro" ).css( "font-size", $(window).width()*0.01+5 );
-					$( "#gallery-heading p" ).css( "font-size", $(window).width()*0.012+5 );
-					$( ".photo h2" ).css( "font-size", $(window).width()*0.015+10 );
-			});
-		}
 	
 });
