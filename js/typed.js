@@ -496,3 +496,21 @@
 
 
 }(window, document, window.jQuery);
+
+$(document).ready(function(){
+	
+		function startTyping() {
+			Typed.new('.typing-1', {
+				strings: ["Born in Shanghai, living in Toronto."],
+				typeSpeed: 35,
+				startDelay: 1500,
+		});
+		Typed.new('.typing-2', {
+				strings: ["I'm a web developer / world traveller."],
+				typeSpeed: 30,
+				startDelay: 4500,
+		});
+	}
+		startTyping();
+	
+});
