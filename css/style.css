@@ -160,7 +160,7 @@ body:before {
     color: rgb(220,220,220);
 		-webkit-animation: zoomIn 0.8s forwards;
 		animation: zoomIn 0.8s forwards;
-		animation-delay: 7.5s;
+		animation-delay: 7s;
 }
 
 #down-btn:hover {
@@ -182,7 +182,7 @@ body:before {
 }
 
 #work {
-    background: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3));
 }
 
 #work-container {
@@ -238,7 +238,7 @@ body:before {
 }
 
 #contact {
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0));
 }
 
 #contact-container {

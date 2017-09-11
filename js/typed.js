@@ -502,13 +502,13 @@ $(document).ready(function(){
 		function startTyping() {
 			Typed.new('.typing-1', {
 				strings: ["Born in Shanghai, living in Toronto."],
-				typeSpeed: 35,
-				startDelay: 1500,
+				typeSpeed: 28,
+				startDelay: 1300,
 		});
 		Typed.new('.typing-2', {
 				strings: ["I'm a web developer / world traveller."],
-				typeSpeed: 30,
-				startDelay: 4500,
+				typeSpeed: 25,
+				startDelay: 4000,
 		});
 	}
 		startTyping();
