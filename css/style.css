@@ -103,15 +103,22 @@ body:before {
     font-family: 'Gentium Book Basic', serif;
 }
 
+#intro-wrapper {
+	margin-top: -50px;
+}
+
 #intro h1 {
     padding-bottom: 30px; 
     margin: 0; 
     font-weight: 600;
 		font-size: 5.5vw;
 		opacity: 0;
-		-webkit-animation: fadeInDown 1s forwards;
-		animation: fadeInDown 1s forwards;
-		animation-delay: 0.3s;
+}
+
+.intro-animation {
+	-webkit-animation: fadeInDown 1s forwards;
+	animation: fadeInDown 1s forwards;
+	animation-delay: 0.3s;
 }
 
 @keyframes fadeInDown {
@@ -771,6 +778,10 @@ footer ul li {
     #cover {
         padding-top: 25px;
     }
+	
+		#intro-wrapper {
+			margin-top: -30px;
+		}
     
     #work-container {
         padding-top: 40px;
