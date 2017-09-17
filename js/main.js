@@ -1,7 +1,10 @@
 $(document).ready(function(){
 	
-		$("#intro h1").addClass("intro-animation"); 
-	
+    $(window).load(function(){
+        $('#preloader').fadeOut();
+        $("#intro h1").addClass("intro-animation"); 
+    });
+    
     $("#down-btn").click(function() {
         $('html, body').animate({
             scrollTop: $("#work").offset().top
